@@ -1,7 +1,9 @@
 {
   "name": "in-browser-embeddings",
   "private": true,
+  "license": "MIT",
   "version": "1.0.0",
+  "author": "Guy Royse <guy@guyroyse.com> (http://guyroyse.com/)",
   "type": "module",
   "scripts": {
     "dev": "vite",
