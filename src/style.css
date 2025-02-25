@@ -1,0 +1,105 @@
+:root {
+  --placeholder-image: url('/redis-logo-hyper.svg');
+}
+
+body {
+  font-family: var(--sans-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--redis-white);
+  color: var(--redis-dusk);
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+header > h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+header > h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.imagePanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  background-image: var(--placeholder-image);
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 24px;
+  padding: 12px;
+  object-fit: contain;
+  border-style: solid;
+  border-color: var(--redis-black-30);
+  border-width: 1px;
+  border-radius: 12px;
+}
+
+.imageButton {
+  font-size: 18px;
+  color: var(--redis-black);
+  background-color: var(--redis-sky-blue);
+  padding: 12px;
+  border-style: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.comparisonPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.comparisonPanel > h3 {
+  font-size: 24px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.comparisonPanel > p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.comparisonButton {
+  font-size: 24px;
+  color: var(--redis-black);
+  background-color: var(--redis-violet);
+  padding: 18px;
+  margin: 0;
+  margin-bottom: 24px;
+  border-style: none;
+  border-radius: 12px;
+  cursor: pointer;
+}

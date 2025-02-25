@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Space Grotesk');
+@import url('https://fonts.googleapis.com/css2?family=Space Mono');
+
+:root {
+  /* Brand fonts */
+  --sans-font: 'Space Grotesk', sans-serif;
+  --mono-font: 'Space Mono', monospace;
+
+  /* Brand colors */
+  --redis-white: #ffffff;
+  --redis-hyper: #ff4438;
+  --redis-deep-hyper: #eb352a;
+  --redis-black: #000000;
+  --redis-black-90: #191919;
+  --redis-black-70: #4c4c4c;
+  --redis-black-50: #808080;
+  --redis-black-30: #b2b2b2;
+  --redis-black-10: #e5e5e5;
+  --redis-light-gray: #f0f0f0;
+  --redis-midnight: #091a23;
+  --redis-dusk: #163341;
+  --redis-dusk-90: #2d4754;
+  --redis-dusk-70: #5c707a;
+  --redis-dusk-50: #8a99a0;
+  --redis-dusk-30: #b9c2c6;
+  --redis-dusk-10: #e8ebec;
+  --redis-violet: #c795e3;
+  --redis-violet-50: #e3caf1;
+  --redis-violet-20: #f4eaf9;
+  --redis-violet-10: #f9f4fc;
+  --redis-sky-blue: #80dbff;
+  --redis-sky-blue-50: #bfedff;
+  --redis-sky-blue-20: #e6f8ff;
+  --redis-sky-blue-10: #f2fbff;
+  --redis-yellow: #dcff1e;
+  --redis-yellow-50: #f1ffa5;
+  --redis-yellow-20: #f8ffd2;
+  --redis-yellow-10: #fbffe8;
+}

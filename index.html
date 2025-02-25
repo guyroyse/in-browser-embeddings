@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/redis-social.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Comparison</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Image comparison</h1>
+      <h2>Select two images and see how similar they are.</h2>
+    </header>
+    <main>
+      <div class="imagePanel">
+        <img id="leftImage" />
+        <label class="imageButton" for="leftImageSelector">Select an image</label>
+        <input id="leftImageSelector" type="file" accept="image/*" hidden />
+      </div>
+      <div class="comparisonPanel">
+        <button class="comparisonButton" id="compareButton">Compare Images</button>
+        <h3>Cosine similarity</h3>
+        <p id="cosineSimilarity">n/a</p>
+        <h3>Euclidean distance</h3>
+        <p id="euclideanDistance">n/a</p>
+      </div>
+      <div class="imagePanel">
+        <img id="rightImage" />
+        <label class="imageButton" for="rightImageSelector">Select an image</label>
+        <input id="rightImageSelector" type="file" accept="image/*" hidden />
+      </div>
+    </main>
+  </body>
+</html>
