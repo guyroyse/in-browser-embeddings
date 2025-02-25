@@ -4,17 +4,15 @@ import './style.css'
 import { pipeline } from '@huggingface/transformers'
 
 const modelName = 'Xenova/clip-vit-base-patch32'
+const imageFeatureExtractor = await pipeline('image-feature-extraction', modelName, { dtype: 'fp32' })
 
 const leftImage = document.querySelector('#leftImage') as HTMLImageElement
 const leftImageSelector = document.querySelector('#leftImageSelector') as HTMLInputElement
 const rightImage = document.querySelector('#rightImage') as HTMLImageElement
 const rightImageSelector = document.querySelector('#rightImageSelector') as HTMLInputElement
 const compareButton = document.querySelector('#compareButton') as HTMLButtonElement
-
 const cosineSimilaritySpan = document.querySelector('#cosineSimilarity') as HTMLDivElement
 const euclideanDistanceSpan = document.querySelector('#euclideanDistance') as HTMLDivElement
-
-const imageFeatureExtractor = await pipeline('image-feature-extraction', modelName, { dtype: 'fp32' })
 
 compareButton.addEventListener('click', handleComparison)
 leftImageSelector.addEventListener('change', handleImageSelection(leftImage))
