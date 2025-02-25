@@ -82,7 +82,7 @@ Now, let's create the embedding.
 
 The function below uses the `imageFeatureExtractor` created above to, well, extract the features from the image. The image is provided as a URL. In our case, we're using a [data URL](https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Schemes/data), but this could be any URL that points to an image.
 
-The `imageFeatureExtractor` returns a [`Tensor`](https://huggingface.co/docs/transformers.js/api/utils/tensor) which contains the embedding and its metadata. We just want the data, and we know it's a [Float32Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array), so we cast it accordingly. This array _is_ the embedding.
+The `imageFeatureExtractor` returns a [`Tensor`](https://huggingface.co/docs/transformers.js/api/utils/tensor) which contains the embedding and its metadata. We just want the data, and we know it's a [`Float32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array), so we cast it accordingly. This array _is_ the embedding.
 
 ```typescript
 async function embedImage(url: string): Promise<Float32Array> {
