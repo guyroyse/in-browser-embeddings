@@ -45,13 +45,13 @@ $ npm run preview
 
 Now that it's running, go to the link [vite](https://vite.dev/) provides you. Upload a pair of images—there are several in the [images](/images) folder for you to select from or just use some of your own—and click the compare button.
 
-You should be presented with the _cosine similarity_ and _euclidean distance_ for the two images.
+You should be presented with the _cosine similarity_ and _Euclidean distance_ for the two images.
 
 ## What do these numbers mean?
 
 Think of vectors as coordinates in a multi-dimensional space. If a pair of vectors consists of three values, they represent a point in a 3-dimension space. If there are 512 values, then there are 512-dimensions.
 
-_Cosine similarity_ and _euclidean distance_ are common techniques to measure how close these points are to each other.
+_Cosine similarity_ and _Euclidean distance_ are common techniques to measure how close these points are to each other.
 
 **Cosine similarity** is the cosine of the angle between the two points represented by the vectors. It is always a value between -1.0 and 1.0 and the larger the cosine similarity, the more similar the vectors are. A result of 1.0 means that the points are in line with each other and -1.0 means that are in opposite directions to each other.
 
@@ -97,7 +97,7 @@ You can see that there's really not a lot of code and we've already got our embe
 
 Typically, you would take an embedding and store it in a [vector database](https://redis.io/redis-for-ai/) or use it to do some sort of vector search. This is good and proper and you should totally do this.
 
-However, we're going to compare two vectors right in the browser. I've written a function to compute the _cosine similarity_ and the _euclidean distance_ for a pair of vectors. Okay. I had Copilot handle it, but hey—it works!
+However, we're going to compare two vectors right in the browser. I've written a function to compute the _cosine similarity_ and the _Euclidean distance_ for a pair of vectors. Okay. I had Copilot handle it, but hey—it works!
 
 ```typescript
 function cosineSimilarity(a: Float32Array, b: Float32Array): number {
@@ -115,7 +115,7 @@ function cosineSimilarity(a: Float32Array, b: Float32Array): number {
   return roundNumber(similarity)
 }
 
-function euclideanDistance(a: Float32Array, b: Float32Array): number {
+function EuclideanDistance(a: Float32Array, b: Float32Array): number {
   let sum = 0.0
   for (let i = 0; i < a.length; i++) {
     sum += Math.pow(a[i] - b[i], 2)
