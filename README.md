@@ -139,6 +139,6 @@ The rest of the app is just calling these various functions and putting stuff on
 
 ## Putting it all to use
 
-This app and its code is intended to be instructional. In practice, you'll generate an embedding in a browser and then hand it off to something server-side (and probably Python) that implements things like [semantic search](https://redis.io/docs/latest/develop/get-started/vector-database/) or [retrieval-augmented generation](https://redis.io/docs/latest/develop/get-started/rag/).
+This app and its code is intended to be instructional. In practice, you'll generate an embedding in a browser and then hand it off to something server-side (and probably Python) that implements things like [semantic search](https://university.redis.io/course/9xcwbkijvf4a4k) or [retrieval-augmented generation](https://redis.io/docs/latest/develop/get-started/rag/).
 
 Creating embeddings is just the first step in building AI-powered applications. And the browser is a great place to do that!
