@@ -4,6 +4,8 @@ Embeddings are merely arrays of numbers that contain semantic information about 
 
 Embeddings are generated using AI models and, like most things AI, from Python and on a server. But this doesn't _have_ to be the case. You can do it in a browser and with JavaScript if you use [Transformers.js](https://huggingface.co/docs/transformers.js/index). This repository and accompanying README will show you how.
 
+![Screenshot of the app comparing images of two fires](/screenshot.png)
+
 ## Running the app
 
 All you need to run this application is Node.js, a web browser, and Internet access. I'm using Node.js v18 but any current version should work just fine. It should work with any browser and was tested with Chrome, Firefox, Safari, and Brave. If it _doesn't_ work with a particular Internet provider, that'd be a surprise!
